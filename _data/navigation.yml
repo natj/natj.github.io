@@ -1,0 +1,14 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+  excerpt: "Short personal description of me, myself and I"
+  image:
+
+- title: Projects
+  url: /projects/
+  excerpt: "My (scientific) projects and doodlings"
+
+- title: Blog
+  url: /blog/
+  excerpt: "All of my writings and blog posts collected"
