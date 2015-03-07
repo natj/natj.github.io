@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Blog"
-excerpt: "Collection of my writings & blog posts"
+title: "Articles"
+excerpt: "Collection of my writings & publications"
 tags: []
 image:
   feature:
