@@ -1,5 +1,9 @@
 # Site navigation links
 
+- title: CV
+  url: /images/cv_plain.pdf
+  excerpt: "My Curriculum Vitae"
+
 - title: About
   url: /info/about/
   excerpt: "Short personal description of me, myself and I"
