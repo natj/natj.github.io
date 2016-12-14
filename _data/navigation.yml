@@ -1,7 +1,7 @@
 # Site navigation links
 
 - title: CV
-  url: /images/cv_plain.pdf
+  url: https://github.com/natj/cv/raw/master/cv_plain.pdf
   excerpt: "My Curriculum Vitae"
 
 - title: About
