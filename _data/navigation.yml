@@ -1,13 +1,16 @@
 # Site navigation links
 
 - title: CV
-  url: https://github.com/natj/cv/raw/master/cv_plain.pdf
+  url: https://rawgit.com/natj/cv/master/cv_plain.pdf
   excerpt: "My Curriculum Vitae"
 
 - title: About
   url: /info/about/
   excerpt: "Short personal description of me, myself and I"
-  image:
+
+- title: Teaching
+  url: /teaching/
+  excerpt: "Teaching related stuff"
 
 - title: Projects
   url: /projects/
@@ -15,4 +18,4 @@
 
 - title: Articles
   url: /articles/
-  excerpt: "Myy writings, blog posts and publications collected"
+  excerpt: "My writings, blog posts and publications collected"
