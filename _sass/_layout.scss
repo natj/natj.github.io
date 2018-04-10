@@ -359,11 +359,11 @@
 		@include omega(4n);
 	}
 	.entry-date {
-		@include font-size(16,no);
+		@include font-size(14,no);
 		color: lighten($text-color,25);
 	}
 	.post-title {
-		@include font-size(18,no);
+		@include font-size(17,no);
 	}
 	.post-excerpt {
 		@include font-size(16);
@@ -388,6 +388,11 @@
 			}
 		}
 	}
+}
+.tiles:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 // footnotes
 .footnotes {
@@ -469,3 +474,28 @@
 		}
 	}
 }
+
+// Front page stylings
+//--------------------------------------------------
+
+/* Create two equal columns that floats next to each other */
+.infocolumn {
+    float: left;
+    width: 33.0%;
+    padding: 2px;
+}
+
+/* Clear floats after the columns */
+.inforow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .infocolumn {
+        width: 100%;
+    }
+}
+
