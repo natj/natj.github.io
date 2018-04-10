@@ -13,7 +13,7 @@ title: " "
 
 I am a researcher working on fields like relativistic astrophysics and computational physics focusing mainly on compact objects like neutron stars and black holes. For this I use tools such as pen & paper and supercomputers.
 
-Currently I am a Nordita Fellow in [Nordic Institute of Theoretical Physics](http://www.nordita.org) (Nordita, Stockholm, Sweden). I am also an avid open-source science & software advocate so you can find most of my research and codes freely [available](https://github.com/natj).
+Currently I am a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Nordita, Stockholm, Sweden). I am also an avid open-source science & software advocate so you can find most of my research and codes freely [available](https://github.com/natj).
 
 ### Research 
 
