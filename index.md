@@ -41,7 +41,7 @@ I have a wide range of interdisciplinary research interests. Mostly I, however, 
 ## Recent publications & blog posts
 
 <div class="tiles">
-{% for post in site.posts limit:8 %}
+{% for post in site.posts limit:16 %}
    {% if post.title != empty %}	
 	{% include post-grid.html %}
    {% endif %}
