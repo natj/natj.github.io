@@ -3,7 +3,7 @@ layout: article
 title: "Arcmancer: general purpose ray tracer"
 toc: false
 categories: articles
-excerpt: "In the project led by Pauli Pihajoki, we took ray tracing and numerical differential geometry to the next level. Images of black holes, disks, neutron stars, you name it!"
+excerpt: "In the project led by Pauli Pihajoki, we took ray tracing and numerical differential geometry to the next level. Images of black holes, disks, neutron stars? Can do!"
 tags: 
 image:
   feature: 
