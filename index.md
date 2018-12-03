@@ -13,7 +13,7 @@ title: " "
 
 I am a researcher working on fields like relativistic astrophysics and computational physics focusing mainly on compact objects like neutron stars and black holes. For this I use tools such as pen & paper and supercomputers.
 
-Currently I am a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Nordita, Stockholm, Sweden). I am also an avid open-source science & software advocate so you can find most of my research and codes freely [available](https://github.com/natj).
+I am a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Nordita, Stockholm, Sweden). I am also an avid open-source science & software advocate so you can find my research and codes freely [available](https://github.com/natj).
 
 ### Research 
 
@@ -22,17 +22,17 @@ I have a wide range of interdisciplinary research interests. Mostly I, however, 
 
 <div class="inforow">
 <div class="infocolumn" markdown="block">
-- **High-energy astrophysics**: accretion & accretion disks; neutron stars, pulsars, X-ray bursters; black holes
-- **Plasma physics & (magnetized) fluid dynamics**: collisionless plasma dynamics; turbulence
+- **High-energy astrophysics**: accretion (accretion disks); compact objects (neutron stars, black holes)
+- **Plasma physics **: collisionless plasma dynamics; turbulence; particle acceleration
 </div>
 <div class="infocolumn" markdown="block">
-- **Dense plasma**: equation of state of cold ultra-dense matter; universal relations 
+- **Nuclear physics**: equation of state of cold ultra-dense neutron matter
 - **General relativity**: ray tracing
-- **Statistics**: (Markov Chain) Monte Carlo methods; Bayesian analysis
+- **Statistics**: Bayesian inference; Monte Carlo methods
 </div>
 <div class="infocolumn" markdown="block">
-- **Computer sciences**: high performance computing; parallellization paradigms; neural networks
-- **Mathematics**: topology; knot theory
+- **Computer sciences**: high performance computing; parallellization paradigms; machine learning; Julia language
+- **Mathematics**: cellular automata models; topology
 </div>
 </div> <!-- /.inforow -->
 
