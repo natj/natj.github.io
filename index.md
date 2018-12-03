@@ -23,7 +23,7 @@ I have a wide range of interdisciplinary research interests. Mostly I, however, 
 <div class="inforow">
 <div class="infocolumn" markdown="block">
 - **High-energy astrophysics**: accretion (accretion disks); compact objects (neutron stars, black holes)
-- **Plasma physics **: collisionless plasma dynamics; turbulence; particle acceleration
+- **Plasma physics**: collisionless plasma dynamics; turbulence; particle acceleration
 </div>
 <div class="infocolumn" markdown="block">
 - **Nuclear physics**: equation of state of cold ultra-dense neutron matter
