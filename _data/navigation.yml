@@ -1,7 +1,7 @@
 # Site navigation links
 
 - title: CV
-  url: https://rawgit.com/natj/cv/master/cv_nattila.pdf
+  url: https://cdn.jsdelivr.net/gh/natj/cv@master/cv_nattila.pdf
   excerpt: "My Curriculum Vitae"
 
 - title: About
