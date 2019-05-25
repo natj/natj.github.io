@@ -3,7 +3,7 @@ layout: article
 title: "Exploring helical dynamos with machine learning"
 toc: false
 categories: articles
-excerpt: "Together with Farruk Nauman we explored helically forced 3D magnetohydrodynamic turbulence simulations with ensemble machine learning techniques"
+excerpt: "Together with Farrukh Nauman we explored helically forced 3D magnetohydrodynamic turbulence simulations with ensemble machine learning techniques."
 tags: 
 image:
   feature: 
