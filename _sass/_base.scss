@@ -11,8 +11,9 @@ p {
 	@include font-size(18,yes,28);
 }
 
+// list size
 li {
-	@include font-size(16,12,24);
+	@include font-size(17,5,20);
 }
 
 // Headings
@@ -164,8 +165,8 @@ tr, td, th {
 hr {
 	display: block;
 	position: relative;
-	margin: 0px + (2 * $doc-line-height) 0;
-	margin: 0rem + ((2 * $doc-line-height) / $doc-font-size) 0;
+	margin: 0px + (1 * $doc-line-height) 0;
+	margin: 0rem + ((0.1 * $doc-line-height) / $doc-font-size) 0;
 	padding: 0;
 	height: 5px;
 	border: 0;

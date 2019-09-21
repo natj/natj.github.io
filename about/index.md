@@ -12,5 +12,3 @@ share: false
 ads: false
 ---
 
-
-This is a work in progress.
