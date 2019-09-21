@@ -486,14 +486,15 @@
 }
 
 .infocolumnR {
-    float: left;
+    float: right;
     width: 40.0%;
-    padding: 5;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 .infocolumn2 {
     float: left;
-    width: 45.0%;
+    width: 50.0%;
     padding: 5px;
 }
 

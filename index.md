@@ -69,12 +69,15 @@ Most of these research notes are done in connection to some publication. If you 
 </div>
 <div class="infocolumnR" markdown="block">
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Undergraduate/PhD collaborators</h4>
+
 - Tuomo Salmi (host for Nordita PhD visit; MSc and BSc thesis co-supervisor)
 - Maarja Bussov (host for Nordita PhD visit)
 - John Hope (MSc thesis supervisor)
 - [Jere Kuuttila](https://www.mpa-garching.mpg.de/person/54672/2377) (MSc thesis co-supervisor)
 - Eemeli Annala (PhD collaboration)
+
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Senior collaborators </h4>
+
 - [Axel Brandenburg](https://www.nordita.org/~brandenb/) (Nordita)
 - [Andrei Beloborodov](https://physics.columbia.edu/people/profile/398) (Columbia Univ.)
 - [Tyler Gorda](http://www.phys.virginia.edu/People/personal.asp?UID=tdg5cs) (Univ. Virginia)
