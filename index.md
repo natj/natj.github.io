@@ -51,12 +51,9 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Notes on physics (work-in-progress)</h4>
 Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to right a paper.
 
-- Relativistic plasma physics
-- Digital filtering
+- [Relativistic plasma physics](https://github.com/natj/notes-corpus/blob/master/plasma-physics/notes.pdf)
+- [Digital filtering](https://github.com/natj/notes-corpus/blob/master/filtering/notes.pdf)
 - [Introduction to neutron star](https://github.com/natj/thesis) (my PhD thesis)
-- Particle acceleration
-- Turbulence
-- Fusion plasmas
 
 
 #### Teaching
@@ -78,6 +75,7 @@ Most of these research notes are done in connection to some publication. If you 
 
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Senior collaborators </h4>
 
+- Pavel Abolmasov
 - [Axel Brandenburg](https://www.nordita.org/~brandenb/) (Nordita)
 - [Andrei Beloborodov](https://physics.columbia.edu/people/profile/398) (Columbia Univ.)
 - [Tyler Gorda](http://www.phys.virginia.edu/People/personal.asp?UID=tdg5cs) (Univ. Virginia)
