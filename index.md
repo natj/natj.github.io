@@ -16,7 +16,7 @@ title: " "
 
 I am an astrophysicist focusing on topics like cosmic plasmas, high-energy astrophysical phenomena, and computational physics.
 I've also done some research on computer sciences, statistics, and machine learning.
-For this I use tools such as pen & paper and supercomputers.
+For my research I use tools such as pen & paper and supercomputers.
 
 From 2020 I'll start as a Flatiron Research Fellow in [CCA/Flatiron](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) and Columbia University, (New York, USA).
 Previously, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Stockholm, Sweden). 
@@ -49,11 +49,11 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 
 <div class="infocolumn2" markdown="block" style="background-color: #F0F0F0;">
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Notes on physics (work-in-progress)</h4>
-Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to right a paper.
+Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
 
 - [Relativistic plasma physics](https://github.com/natj/notes-corpus/blob/master/plasma-physics/notes.pdf)
 - [Digital filtering](https://github.com/natj/notes-corpus/blob/master/filtering/notes.pdf)
-- [Introduction to neutron star](https://github.com/natj/thesis) (my PhD thesis)
+- [Introduction to neutron stars](https://github.com/natj/thesis) (my PhD thesis)
 
 
 #### Teaching
@@ -68,14 +68,14 @@ Most of these research notes are done in connection to some publication. If you 
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Undergraduate/PhD collaborators</h4>
 
 - Tuomo Salmi (host for Nordita PhD visit; MSc and BSc thesis co-supervisor)
-- Maarja Bussov (host for Nordita PhD visit)
+- Maarja Kruuse (host for Nordita PhD visit)
 - John Hope (MSc thesis supervisor)
 - [Jere Kuuttila](https://www.mpa-garching.mpg.de/person/54672/2377) (MSc thesis co-supervisor)
 - Eemeli Annala (PhD collaboration)
 
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Senior collaborators </h4>
 
-- Pavel Abolmasov
+- Pavel Abolmasov (Univ. Turku)
 - [Axel Brandenburg](https://www.nordita.org/~brandenb/) (Nordita)
 - [Andrei Beloborodov](https://physics.columbia.edu/people/profile/398) (Columbia Univ.)
 - [Tyler Gorda](http://www.phys.virginia.edu/People/personal.asp?UID=tdg5cs) (Univ. Virginia)
@@ -84,12 +84,12 @@ Most of these research notes are done in connection to some publication. If you 
 - [Cole Miller](https://www.astro.umd.edu/~miller/) (Univ. Maryland)
 - [Farrukh Nauman](https://fnauman.github.io/) (Chalmers U.)
 - [Pauli Pihajoki](https://blogs.helsinki.fi/pihajoki/) (Univ. Helsinki)
-- [Juri Poutanen](http://users.utu.fi/jurpou/) (Univ. Turku/Tuorla Observatory)
+- [Juri Poutanen](http://users.utu.fi/jurpou/) (Univ. Turku)
 - [Lorenzo Sironi](http://user.astro.columbia.edu/~lsironi/Site/Home.html) (Columbia Univ.)
-- [Andrew Steiner](http://neutronstars.utk.edu/) (Univ. Tennessee / ORNL)
+- [Andrew Steiner](http://neutronstars.utk.edu/) (Univ. Tennessee & ORNL)
 - Valery Suleimanov (Univ. Tubingen)
 - [Aleksi Vuorinen](https://www.mv.helsinki.fi/home/arjvuori/) (Univ. Helsinki)
-- Alexandra Veledina (Nordita / Univ. Turku)
+- Alexandra Veledina (Nordita & Univ. Turku)
 </div>
 </div> <!-- /.inforow -->
 
@@ -97,7 +97,7 @@ Most of these research notes are done in connection to some publication. If you 
 ## Recent publications & blog posts
 
 <div class="tiles">
-{% for post in site.posts limit:16 %}
+{% for post in site.posts limit:32 %}
    {% if post.title != empty %}	
 	{% include post-grid.html %}
    {% endif %}
