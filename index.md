@@ -52,6 +52,7 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
 
 - [Relativistic plasma physics](https://github.com/natj/notes-corpus/blob/master/plasma-physics/notes.pdf)
+- [MHD turbulence](https://github.com/natj/notes-corpus/blob/master/turbulence/notes.pdf)
 - [Digital filtering](https://github.com/natj/notes-corpus/blob/master/filtering/notes.pdf)
 - [Introduction to neutron stars](https://github.com/natj/thesis) (my PhD thesis)
 
