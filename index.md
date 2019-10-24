@@ -6,7 +6,7 @@ permalink: /
 title: " "
 ---
 
-<img style="float: left; padding-right:50px;" src="images/jnattila_small.jpg">
+<img style="float: left; padding-right:50px;" src="images/jnattila2_small.jpg">
 
 
 
@@ -48,7 +48,7 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 <div class="inforow">
 
 <div class="infocolumn2" markdown="block" style="background-color: #F0F0F0;">
-<h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Notes on physics (work-in-progress)</h4>
+<h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Notes on physics</h4>
 Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
 
 - [Relativistic plasma physics](https://github.com/natj/notes-corpus/blob/master/plasma-physics/notes.pdf)
