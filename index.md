@@ -18,7 +18,7 @@ I am an astrophysicist focusing on topics like cosmic plasmas, high-energy astro
 I've also done some research on computer sciences, statistics, and machine learning.
 For my research I use tools such as pen & paper and supercomputers.
 
-Currently, I have a joint position as a Postdoctoral Research Scientist in Columbia University and as a Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) (New York, USA).
+Currently, I have a joint position as a Postdoctoral Research Scientist in [Columbia University](https://physics.columbia.edu/) and as a Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) (New York, USA).
 Previously, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Stockholm, Sweden). 
 I am also an avid open-source science & software advocate --- you can find my research and codes freely available from [GitHub](https://github.com/natj).
 
