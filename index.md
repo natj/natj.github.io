@@ -1,7 +1,7 @@
 ---
 layout: home
 image:
-  feature: blackboard_large.jpg
+  feature: turbulence.png
 permalink: /
 title: " "
 ---
@@ -18,7 +18,7 @@ I am an astrophysicist focusing on topics like cosmic plasmas, high-energy astro
 I've also done some research on computer sciences, statistics, and machine learning.
 For my research I use tools such as pen & paper and supercomputers.
 
-From 2020 I'll start as a Flatiron Research Fellow in [CCA/Flatiron](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) and Columbia University, (New York, USA).
+Currently, I have a joint position as a Postdoctoral Research Scientist in Columbia University and as a Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) (New York, USA).
 Previously, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Stockholm, Sweden). 
 I am also an avid open-source science & software advocate --- you can find my research and codes freely available from [GitHub](https://github.com/natj).
 
@@ -49,13 +49,13 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 
 <div class="infocolumn2" markdown="block" style="background-color: #F0F0F0;">
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Notes on physics</h4>
-Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
 
 - [Relativistic plasma physics](https://github.com/natj/notes-corpus/blob/master/plasma-physics/notes.pdf)
 - [MHD turbulence](https://github.com/natj/notes-corpus/blob/master/turbulence/notes.pdf)
 - [Digital filtering](https://github.com/natj/notes-corpus/blob/master/filtering/notes.pdf)
 - [Introduction to neutron stars](https://github.com/natj/thesis) (my PhD thesis)
 
+Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
 
 #### Teaching
 
