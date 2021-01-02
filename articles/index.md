@@ -27,13 +27,13 @@ A list of some of the papers of mine that I like the most (in no particular orde
 In general, you can categorize my past work to (roughly) these topics:
 
 
-## Astroplasma physics 
+### Astroplasma physics 
 
 - [Radiative turbulent flares in magnetically-dominated plasmas](https://arxiv.org/abs/2012.03043)
 - [Runko: Modern multi-physics toolbox for simulating plasma](https://arxiv.org/abs/1906.06306)
 
 
-## Equation of state of ultra-dense matter
+### Equation of state of ultra-dense matter
 
 - [Combining Electromagnetic and Gravitational-Wave Constraints on Neutron-Star Masses and Radii](https://arxiv.org/abs/2008.12817)
 - [Evidence for quark-matter cores in massive neutron stars](https://www.nature.com/articles/s41567-020-0914-9)
@@ -43,7 +43,7 @@ In general, you can categorize my past work to (roughly) these topics:
     - (also X-ray bursts)
 
 
-## Neutron star (astro)physics
+### Neutron star (astro)physics
 
 - [Oblate Schwarzschild approximation for polarized radiation from rapidly rotating neutron stars](https://www.aanda.org/articles/aa/abs/2020/11/aa39134-20/aa39134-20.html)
 - [Magnetospheric return-current-heated atmospheres of rotation-powered millisecond pulsars](https://www.aanda.org/articles/aa/abs/2020/09/aa37824-20/aa37824-20.html)
@@ -53,7 +53,8 @@ In general, you can categorize my past work to (roughly) these topics:
 - [Models of neutron star atmospheres enriched with nuclear burning ashes](https://www.aanda.org/articles/aa/full_html/2015/09/aa26512-15/aa26512-15.html)
 
 
-## X-ray bursts from neutron stars
+### X-ray bursts from neutron stars
+
 - [Evidence for the Photoionization Absorption Edge in a Photospheric Radius Expansion X-Ray Burst from GRS 1747-312 in Terzan 6](https://iopscience.iop.org/article/10.3847/1538-4357/aade8e)
 - [Basic parameters of the helium-accreting X-ray bursting neutron star in 4U 1820-30](https://academic.oup.com/mnras/article/472/4/3905/4102338)
 - [Neutron star mass and radius measurements from atmospheric model fits to X-ray burst cooling tail spectra](https://www.aanda.org/articles/aa/full_html/2017/12/aa31082-17/aa31082-17.html)
@@ -69,14 +70,13 @@ In general, you can categorize my past work to (roughly) these topics:
 
 In addition, there are other miscellaneous topics that I've dipped my toes in:
 
-## Machine learning
+### Machine learning
 
 - [Exploring helical dynamos with machine learning: Regularized linear regression outperforms ensemble methods](https://www.aanda.org/articles/aa/full_html/2019/09/aa35945-19/aa35945-19.html)
 
-## General relativity/ray tracing
+### General relativity/ray tracing
 
 - [General Purpose Ray Tracing and Polarized Radiative Transfer in General Relativity](https://iopscience.iop.org/article/10.3847/1538-4357/aacea0)
-
 
 
 
