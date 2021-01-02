@@ -8,16 +8,16 @@ image:
   teaser:
 ---
 
-A list of some of the papers of mine that I like the most:
+A list of some of the papers of mine that I like the most (in no particular order):
 
-
-[Radiative turbulent flares in magnetically-dominated plasmas](https://arxiv.org/abs/2012.03043)
-
-[Radiation from rapidly rotating oblate neutron stars](https://arxiv.org/abs/1709.07292)
-
-[Evidence for quark matter cores inside neutron stars](https://www.nature.com/articles/s41567-020-0914-9)
-
-[Neutron star M-R measurements from atmospheric model fits to X-ray burst cooling tail spectra](https://arxiv.org/abs/1709.09120)
+- [Radiative turbulent flares in magnetically-dominated plasmas](https://arxiv.org/abs/2012.03043)
+    - Detailed study on reconnection-mediated turbulent flares and their radiative properties. These flares can be relevant for explaining plasma energization in neutron star magnetospheres and black hole accretion disks.
+- [Radiation from rapidly rotating oblate neutron stars](https://arxiv.org/abs/1709.07292)
+    - Extensive study on radiation characteristics from rapidly spinning neutron stars. We generalize previous works to include effects from oblate surfaces and quadrupole corrections to the spacetime metric.
+- [Evidence for quark matter cores inside neutron stars](https://www.nature.com/articles/s41567-020-0914-9)
+    - We show that when results from modern nuclear physics and perturbative QCD limits are combined together, they imply that the most massive neutron stars can have quark matter cores. Importantly, we show that even if there is no quark matter, the core is still made of exotic material that breaks the conformal limit (speed of sound exceeds square root of c/3).
+- [Neutron star M-R measurements from atmospheric model fits to X-ray burst cooling tail spectra](https://arxiv.org/abs/1709.09120)
+    - By using a detailed Bayesian fitting procedure we show that it is possible to measure the neutron star radius very accurately from existing X-ray data. From this analysis we obtained a neutron star radius of 12.4 +- 0.4 km that is amazingly consistent with other measurements, and is still one of the most accurate measurements of NS radius.
 
 
 --------
@@ -76,6 +76,8 @@ In addition, there are other miscellaneous topics that I've dipped my toes in:
 ## General relativity/ray tracing
 
 - [General Purpose Ray Tracing and Polarized Radiative Transfer in General Relativity](https://iopscience.iop.org/article/10.3847/1538-4357/aacea0)
+
+
 
 
 ---
