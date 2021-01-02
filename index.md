@@ -23,7 +23,7 @@ Previously, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics]
 I am also an avid open-source science & software advocate --- you can find my research and codes freely available from [GitHub](https://github.com/natj).
 
 
-### Research 
+### [Research](/articles)
 
 I have a wide range of interdisciplinary research interests. These reflect some of my latest publications:
 
@@ -57,7 +57,7 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 
 Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
 
-#### Teaching
+#### [Teaching](/teaching)
 
 - [CSC High-performance Summer School](https://www.csc.fi/en/web/training/-/csc_summerschool_2019)
     - latest materials from [2019](https://github.com/csc-training/summerschool)
