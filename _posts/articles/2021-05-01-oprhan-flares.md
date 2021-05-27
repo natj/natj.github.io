@@ -3,7 +3,7 @@ layout: article
 title: "Kinetic plasma model for orphan gamma-ray flares"
 toc: false
 categories: articles
-excerpt: "Together with Emanuele Sobbacchi and Lorenzo Sironi we discuss a new astrophysical model for orphan gamma-ray flares based on reconnection-mediated turbulence"
+excerpt: "Together with Emanuele Sobacchi and Lorenzo Sironi we discuss a new astrophysical model for orphan gamma-ray flares based on reconnection-mediated turbulence"
 tags: 
 image:
   feature: 

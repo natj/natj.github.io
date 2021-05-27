@@ -76,15 +76,12 @@ Most of these research notes are done in connection to some publication. If you 
 
 <h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Senior collaborators </h4>
 
-- Pavel Abolmasov (Univ. Turku)
 - [Axel Brandenburg](https://www.nordita.org/~brandenb/) (Nordita)
 - [Andrei Beloborodov](https://physics.columbia.edu/people/profile/398) (Columbia Univ.)
-- [Tyler Gorda](http://www.phys.virginia.edu/People/personal.asp?UID=tdg5cs) (Univ. Virginia)
-- Jari Kajava (Univ. Turku)
+- [James Cho](https://www.simonsfoundation.org/people/james-cho/) (Flatiron)
 - [Aleksi Kurkela](https://th-dep.web.cern.ch/roster/kurkela-aleksi) (CERN)
 - [Cole Miller](https://www.astro.umd.edu/~miller/) (Univ. Maryland)
-- [Farrukh Nauman](https://fnauman.github.io/) (Chalmers U.)
-- [Pauli Pihajoki](https://blogs.helsinki.fi/pihajoki/) (Univ. Helsinki)
+- [Sasha Philippov](https://sashaphilippov.wixsite.com/sashaph) (Flatiron)
 - [Juri Poutanen](http://users.utu.fi/jurpou/) (Univ. Turku)
 - [Lorenzo Sironi](http://user.astro.columbia.edu/~lsironi/Site/Home.html) (Columbia Univ.)
 - [Andrew Steiner](http://neutronstars.utk.edu/) (Univ. Tennessee & ORNL)
