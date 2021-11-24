@@ -3,7 +3,7 @@ layout: article
 title: "Coherent radio emission from magnetized shocks"
 toc: false
 categories: articles
-excerpt: "In our PRL we studied the production of radio waves from magnetized collisionless shocks as a viable FRB emission mechanism.
+excerpt: "In our PRL we studied the production of radio waves from magnetized collisionless shocks as a viable FRB emission mechanism."
 tags: 
 image:
   feature: 
