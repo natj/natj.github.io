@@ -7,7 +7,7 @@ excerpt: "PRL on how Alfven-wave turbulence can heat astrophysical plasmas aroun
 tags: 
 image:
   feature: 
-  teaser: alfventurb.png
+  teaser: alfventurb.jpg
 ---
 
 
