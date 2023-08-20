@@ -8,14 +8,14 @@
   url: /info/about/
   excerpt: "Short personal description of me, myself and I"
 
+- title: Research
+  url: /articles/
+  excerpt: "My writings and publications"
+
 - title: Teaching
   url: /teaching/
   excerpt: "Teaching related stuff"
 
-- title: Projects
+- title: Misc
   url: /projects/
-  excerpt: "My (scientific) projects and doodlings"
-
-- title: Articles
-  url: /articles/
-  excerpt: "My writings, blog posts and publications collected"
+  excerpt: "My miscellaneous (scientific) projects and doodlings"

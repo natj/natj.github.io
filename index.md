@@ -1,24 +1,31 @@
 ---
 layout: home
 image:
-  feature: blackboard_large.jpg
+  feature: turbulence.png
 permalink: /
 title: " "
 ---
 
+<img style="float: left; padding-right:50px;" src="images/jnattila2.jpg">
 
-<img style="float: left; padding-right:50px;" src="images/jnattila_small.jpg">
+
 
 # [About me](/about)
 
-I am a researcher working on fields like relativistic astrophysics and computational physics focusing mainly on compact objects like neutron stars and black holes. For this I use tools such as pen & paper and supercomputers.
 
-I am a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Nordita, Stockholm, Sweden). I am also an avid open-source science & software advocate so you can find my research and codes freely [available](https://github.com/natj).
 
-### Research 
+I am an astrophysicist focusing on topics like cosmic plasmas, high-energy astrophysical phenomena, and computational physics.
+I've also done some research on computer sciences, statistics, and machine learning.
+For my research I use tools such as pen & paper and supercomputers.
 
-I have a wide range of interdisciplinary research interests. Mostly I, however, like to focus on computational astrophysics. <!-- I enjoy working on projects that identify ''*first order*'' principles and make connections between other fields of physics and sciences. -->
+Currently, I have a joint position as a Postdoctoral Research Scientist in [Columbia University](https://physics.columbia.edu/) and as a Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) (New York, USA).
+Previously, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Stockholm, Sweden). 
+I am also an avid open-source science & software advocate --- you can find my research and codes freely available from [GitHub](https://github.com/natj).
 
+
+### [Research](/articles)
+
+I have a wide range of interdisciplinary research interests. These reflect some of my latest publications:
 
 <div class="inforow">
 <div class="infocolumn" markdown="block">
@@ -38,10 +45,57 @@ I have a wide range of interdisciplinary research interests. Mostly I, however, 
 
 ---
 
+<div class="inforow">
+
+<div class="infocolumn2" markdown="block" style="background-color: #F0F0F0;">
+<h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Notes on physics</h4>
+
+- [Relativistic plasma physics](https://github.com/natj/notes-corpus/blob/master/plasma-physics/notes.pdf)
+- [MHD turbulence](https://github.com/natj/notes-corpus/blob/master/turbulence/notes.pdf)
+- [Digital filtering](https://github.com/natj/notes-corpus/blob/master/filtering/notes.pdf)
+- [Introduction to neutron stars](https://github.com/natj/thesis) (my PhD thesis)
+
+Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
+
+#### [Teaching](/teaching)
+
+- [CSC High-performance Summer School](https://www.csc.fi/en/web/training/-/csc_summerschool_2019)
+    - latest materials from [2019](https://github.com/csc-training/summerschool)
+- [Introduction to Julia](https://github.com/csc-training/julia-introduction) (CSC)
+- [Introduction to UNIX](https://github.com/natj/unix-intro) (Univ. Turku)
+- [Scientific writing tips](https://github.com/natj/sci_writing)
+</div>
+<div class="infocolumnR" markdown="block">
+<h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Undergraduate/PhD collaborators</h4>
+
+- Tuomo Salmi (host for Nordita PhD visit; MSc and BSc thesis co-supervisor)
+- Maarja Kruuse (host for Nordita PhD visit)
+- John Hope (MSc thesis supervisor)
+- [Jere Kuuttila](https://www.mpa-garching.mpg.de/person/54672/2377) (MSc thesis co-supervisor)
+- Eemeli Annala (PhD collaboration)
+
+<h4 style="margin-top: 0.2em; margin-bottom: 0.0em;"> Senior collaborators </h4>
+
+- [Axel Brandenburg](https://www.nordita.org/~brandenb/) (Nordita)
+- [Andrei Beloborodov](https://physics.columbia.edu/people/profile/398) (Columbia Univ.)
+- [James Cho](https://www.simonsfoundation.org/people/james-cho/) (Flatiron)
+- [Aleksi Kurkela](https://th-dep.web.cern.ch/roster/kurkela-aleksi) (CERN)
+- [Cole Miller](https://www.astro.umd.edu/~miller/) (Univ. Maryland)
+- [Sasha Philippov](https://sashaphilippov.wixsite.com/sashaph) (Flatiron)
+- [Juri Poutanen](http://users.utu.fi/jurpou/) (Univ. Turku)
+- [Lorenzo Sironi](http://user.astro.columbia.edu/~lsironi/Site/Home.html) (Columbia Univ.)
+- [Andrew Steiner](http://neutronstars.utk.edu/) (Univ. Tennessee & ORNL)
+- Valery Suleimanov (Univ. Tubingen)
+- [Aleksi Vuorinen](https://www.mv.helsinki.fi/home/arjvuori/) (Univ. Helsinki)
+- Alexandra Veledina (Nordita & Univ. Turku)
+</div>
+</div> <!-- /.inforow -->
+
+
 ## Recent publications & blog posts
 
 <div class="tiles">
-{% for post in site.posts limit:16 %}
+{% for post in site.posts limit:32 %}
    {% if post.title != empty %}	
 	{% include post-grid.html %}
    {% endif %}
