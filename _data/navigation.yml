@@ -1,7 +1,7 @@
 # Site navigation links
 
 - title: CV
-  url: https://github.com/natj/cv/blob/master/cv_nattila_short.pdf
+  url: https://cdn.jsdelivr.net/gh/natj/cv@master/cv_nattila.pdf
   excerpt: "My Curriculum Vitae"
 
 - title: About
@@ -19,4 +19,3 @@
 - title: Misc
   url: /projects/
   excerpt: "My miscellaneous (scientific) projects and doodlings"
-
