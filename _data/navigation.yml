@@ -1,21 +1,21 @@
 # Site navigation links
 
-- title: CV
-  url: https://cdn.jsdelivr.net/gh/natj/cv@master/cv_nattila.pdf
-  excerpt: "My Curriculum Vitae"
+- title: About me
+  url: /about/
+  excerpt: "Joonas Nättilä"
 
-- title: About
-  url: /info/about/
-  excerpt: "Short personal description of me, myself and I"
-
-- title: Research
-  url: /articles/
-  excerpt: "My writings and publications"
+- title: Research Group
+  url: /group/index
+  excerpt: "Plasma Astrophysics Research Group"
 
 - title: Teaching
   url: /teaching/
   excerpt: "Teaching related stuff"
 
-- title: Misc
+- title: Blog 
   url: /projects/
   excerpt: "My miscellaneous (scientific) projects and doodlings"
+
+- title: CV
+  url: https://cdn.jsdelivr.net/gh/natj/cv@master/cv_nattila.pdf
+  excerpt: "My Curriculum Vitae"

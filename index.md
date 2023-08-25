@@ -9,18 +9,18 @@ title: " "
 <img style="float: left; padding-right:50px;" src="images/jnattila2.jpg">
 
 
-
 # [About me](/about)
 
+I am a computational astrophysicist studying high-energy astrophysical phenomena around neutron stars and black holes. For my research, I use both theoretical "pen-and-paper work" and large-scale supercomputer simulations.
+
+I am currently a joint Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) & Postdoctoral Reseacher in Columbia University (2020-2023; New York, USA). Before coming to New York, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (2018-2020; Stockholm, Sweden). 
+
+You can read more about my reserach [here](/about) and on [our group page](/group).
 
 
-I am an astrophysicist focusing on topics like cosmic plasmas, high-energy astrophysical phenomena, and computational physics.
-I've also done some research on computer sciences, statistics, and machine learning.
-For my research I use tools such as pen & paper and supercomputers.
+### In Finnish/Suomeksi:
 
-Currently, I have a joint position as a Postdoctoral Research Scientist in [Columbia University](https://physics.columbia.edu/) and as a Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) (New York, USA).
-Previously, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (Stockholm, Sweden). 
-I am also an avid open-source science & software advocate --- you can find my research and codes freely available from [GitHub](https://github.com/natj).
+Olen suomalainen astrofyysikko joka keskittyy suurenergia-astrofysiikan ääri-ilmiöiden tutkimiseen. Tutkin muun muuassa neutronitähtien purkauksia, pulsarien säteilyä, mustien aukkojen kertymäkiekkoja, sekä kosmisia radiopurskeita.
 
 
 ### [Research](/articles)

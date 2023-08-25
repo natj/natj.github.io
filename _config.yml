@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: Joonas Nättilä
-description: "Personal & professional webpage of Finnish astrophysicist Joonas Nättilä"
+description: "Personal & professional of astrophysicist Joonas Nättilä"
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale:
