@@ -25,9 +25,10 @@ The Plasma Astrophysics Group uses state-of-the-art supercomputer simulations to
 </div><!-- /.tile -->
 
 
+
 <div class="tile">
   <h2 class="post-title">Accretion Flows</h2>
-  <p class="post-teaser"><img src="/images/astro_disk.png"></p>
+  <p class="post-teaser"><img src="/images/astro_disks.png"></p>
   <p class="post-excerpt">Accretion flows around black holes: energization of the disk corona & origin of state transitions.</p>
 </div><!-- /.tile -->
 
@@ -44,11 +45,10 @@ The Plasma Astrophysics Group uses state-of-the-art supercomputer simulations to
 </div><!-- /.tile -->
 
 <div class="tile">
-  <h2 class="post-title">  Magnetar Flares</h2>
+  <h2 class="post-title">Magnetar Flares</h2>
   <p class="post-teaser"><img src="/images/astro_magnetars.png"></p>
   <p class="post-excerpt">Extremely luminous X- and g-ray flashes from supermagnetized neutron stars.</p>
 </div><!-- /.tile -->
-
 
 </div><!-- /.tiles -->
 
