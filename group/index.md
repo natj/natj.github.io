@@ -45,7 +45,7 @@ The Plasma Astrophysics Group uses state-of-the-art supercomputer simulations to
 
 <div class="tile">
   <h2 class="post-title">  Magnetar Flares</h2>
-  <p class="post-teaser"><img src="/images/astro_magflares.png"></p>
+  <p class="post-teaser"><img src="/images/astro_magnetars.png"></p>
   <p class="post-excerpt">Extremely luminous X- and g-ray flashes from supermagnetized neutron stars.</p>
 </div><!-- /.tile -->
 
