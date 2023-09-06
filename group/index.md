@@ -11,7 +11,10 @@ ads: false
 ---
 
 
-The Plasma Astrophysics Group uses state-of-the-art supercomputer simulations to model astrophysical plasmas. We focus on understanding the radiative plasma physics of magnetar flares, pulsar radio emission, accretion flows around black holes, and fast radio bursts.
+The Plasma Astrophysics Group uses state-of-the-art supercomputer simulations to model astrophysical plasmas. We focus on understanding the radiative plasma physics of magnetar flares, neutron-star mergers, accretion flows around black holes, and enigmatic fast radio bursts.
+
+The research is funded by the European Research Council (ERC) Starting Grant project ILLUMINATOR. The project aims to unravel how neutron stars generate their observed electromagnetic radiation.
+
 
 ### High-Energy Astrophysics
 
@@ -92,13 +95,13 @@ We also have a long track-record in usage of high-performance computing solution
 
 <figure>
 	<a href="https://github.com/natj/runko"><img src="/images/runko_logo_gol.gif"></a>
-	<figcaption>Runko: Modern CPU/GPU-portable Plasma Toolkit written in C++/Python.</figcaption>
+	<figcaption>Runko: Modern C++/Python CPU/GPU Plasma Toolkit written in C++/Python.</figcaption>
 </figure>
 
 
 
 ## Students 
 
-I am always happy to discuss possible student projects in high-energy astrophysics, plasma atrophysics, and high-performance computing. See also the the list of currently available projects here.
+I am always happy to discuss possible student projects in high-energy astrophysics, plasma astrophysics, and high-performance computing. 
 
 
