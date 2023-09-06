@@ -13,11 +13,11 @@ title: " "
 
 I am a computational astrophysicist studying high-energy astrophysical phenomena around neutron stars and black holes. For my research, I use both theoretical "pen-and-paper work" and large-scale supercomputer simulations.
 
-I am also the Principal Investigator of the European Research Council (ERC) funded reserach project ILLUMINATOR. The project aims to unravel how neutron stars generate their observed electromagnetic radiation. 
+I am also the Principal Investigator of the European Research Council (ERC) funded research project ILLUMINATOR. The project aims to unravel how neutron stars generate their observed electromagnetic radiation. 
 
-I am currently a joint Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) & Postdoctoral Reseacher in Columbia University (2020-2023; New York, USA). Before coming to New York, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (2018-2020; Stockholm, Sweden). 
+I am currently a joint Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) & Postdoctoral Researcher in Columbia University (2020-2023; New York, USA). Before coming to New York, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (2018-2020; Stockholm, Sweden). 
 
-You can read more about my reserach [here](/about) and on [our group page](/group).
+You can read more about my research [here](/about) and on [our group page](/group).
 
 
 ### In Finnish/Suomeksi:
@@ -40,7 +40,7 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 - **Statistics**: Bayesian inference; Monte Carlo methods
 </div>
 <div class="infocolumn" markdown="block">
-- **Computer sciences**: high performance computing; parallellization paradigms; machine learning; Julia language
+- **Computer sciences**: high performance computing; parallelization paradigms; machine learning; Julia language
 - **Mathematics**: cellular automata models; topology
 </div>
 </div> <!-- /.inforow -->
@@ -57,7 +57,7 @@ I have a wide range of interdisciplinary research interests. These reflect some 
 - [Digital filtering](https://github.com/natj/notes-corpus/blob/master/filtering/notes.pdf)
 - [Introduction to neutron stars](https://github.com/natj/thesis) (my PhD thesis)
 
-Most of these research notes are done in connection to some publication. If you want to cite these, let me know and I'll point you to a right paper.
+Most of these research notes are done in connection to some publication. Let me know if you want to cite these, and I'll point you to the right paper.
 
 #### [Teaching](/teaching)
 

@@ -50,7 +50,7 @@ The research is funded by the European Research Council (ERC) Starting Grant pro
 <div class="tile">
   <h2 class="post-title">Magnetar Flares</h2>
   <p class="post-teaser"><img src="/images/astro_magnetars.png"></p>
-  <p class="post-excerpt">Extremely luminous X- and g-ray flashes from supermagnetized neutron stars.</p>
+  <p class="post-excerpt">Extremely luminous X- and g-ray flashes from super magnetized neutron stars.</p>
 </div><!-- /.tile -->
 
 </div><!-- /.tiles -->
@@ -75,7 +75,7 @@ The research is funded by the European Research Council (ERC) Starting Grant pro
 <div class="tile">
   <h2 class="post-title">Collisionless Shocks</h2>
   <p class="post-teaser"><img src="/images/plasma_shocks.png"></p>
-  <p class="post-excerpt">Collisionless shock in magnetized plasmas: particle energization, synchrotorn maser instability.</p>
+  <p class="post-excerpt">Collisionless shock in magnetized plasmas: particle energization, synchrotron maser instability.</p>
 </div><!-- /.tile -->
 
 <div class="tile">
@@ -91,7 +91,7 @@ The research is funded by the European Research Council (ERC) Starting Grant pro
 
 ### High-performance computing
 
-We also have a long track-record in usage of high-performance computing solutions and building open-source simulation tools. As part of this effort, we are actively developing and mainintaing the modern GPU/CPU-portable plasma code Runko.
+We also have a long track record in using high-performance computing solutions and building open-source simulation tools. As part of this effort, we are actively developing and maintaining the modern GPU/CPU-portable plasma code Runko.
 
 <figure>
 	<a href="https://github.com/natj/runko"><img src="/images/runko_logo_gol.gif"></a>
