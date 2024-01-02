@@ -1,16 +1,18 @@
 ---
 layout: single
-classes: 
-    - wide
 title: "Joonas Nättilä"
 permalink: /about/
 author_profile: true
-toc: false
+toc: true
+sidebar:
+  nav: "general"
 share: false
 ads: false
 header:
   overlay_image: /images/blackboard_large.jpg
 ---
+
+# Bio
 
 I am a computational astrophysicist based in New York. My research is focused on understanding high-energy astrophysical phenomena around neutron stars and black holes. 
 
@@ -20,7 +22,7 @@ Previously, I was a joint Flatiron Research Fellow in [Center for Computational 
 
 
 
-## High-Impact Publications
+# High-Impact Publications
 
 Another view into my research track can be gained by looking at my high-impact publications:
 
@@ -42,7 +44,7 @@ In addition, my research has been featured in the cover of Physical Review Lette
 
 --------
 
-## Selected Publications
+# Selected Publications
 
 A list of some of the papers of mine that I like the most (in no particular order):
 
@@ -56,11 +58,11 @@ A list of some of the papers of mine that I like the most (in no particular orde
     - By using a detailed Bayesian fitting procedure we show that it is possible to measure the neutron star radius very accurately from existing X-ray data. From this analysis we obtained a neutron star radius of 12.4 +- 0.4 km that is amazingly consistent with other measurements, and is still one of the most accurate measurements of NS radius.
 
 
-## All Publications Sorted by the Research Topic
+# All Publications Sorted by the Research Topic
 
 In general, you can categorize my past work to (roughly) these topics:
 
-### Astroplasma physics 
+## Astroplasma physics 
 
 - [A fully-kinetic model for orphan gamma-ray flares in blazars](https://arxiv.org/abs/2102.11770)
 - [Coherent Electromagnetic Emission from Relativistic Magnetized Shocks](https://arxiv.org/abs/2107.01211)
@@ -70,12 +72,12 @@ In general, you can categorize my past work to (roughly) these topics:
 - [Radiative turbulent flares in magnetically-dominated plasmas](https://arxiv.org/abs/2012.03043)
 - [Runko: Modern multi-physics toolbox for simulating plasma](https://arxiv.org/abs/1906.06306)
 
-### Exoplanet atmosphere dynamics
+## Exoplanet atmosphere dynamics
 
 - [Repeated Cyclogenesis on Hot-Exoplanet Atmospheres with Deep Heating](https://arxiv.org/abs/2212.05114)
 
 
-### Equation of state of ultra-dense matter
+## Equation of state of ultra-dense matter
 
 - [Strongly interacting matter exhibits deconfined behavior in massive neutron stars](https://www.nature.com/articles/s41467-023-44051-y)
 - [Multimessenger Constraints for Ultradense Matter](https://arxiv.org/abs/2105.05132)
@@ -85,13 +87,13 @@ In general, you can categorize my past work to (roughly) these topics:
 - [Equation of state constraints for the cold dense matter inside neutron stars using the cooling tail method](https://www.aanda.org/articles/aa/full_html/2016/07/aa27416-15/aa27416-15.html) (also X-ray bursts)
 
 
-### General relativity/ray tracing
+## General relativity/ray tracing
 
 - [General Purpose Ray Tracing and Polarized Radiative Transfer in General Relativity](https://iopscience.iop.org/article/10.3847/1538-4357/aacea0)
 - [artpol: Analytical ray-tracing method for spectro-polarimetric properties of accretion disks around Kerr black holes](https://arxiv.org/abs/2308.15159)
 
 
-### Neutron star (astro)physics
+## Neutron star (astro)physics
 
 - [Neutron Star Atmosphere-Ocean Dynamics](https://arxiv.org/abs/2306.08186)
 - [Oblate Schwarzschild approximation for polarized radiation from rapidly rotating neutron stars](https://www.aanda.org/articles/aa/abs/2020/11/aa39134-20/aa39134-20.html)
@@ -102,13 +104,13 @@ In general, you can categorize my past work to (roughly) these topics:
 - [Models of neutron star atmospheres enriched with nuclear burning ashes](https://www.aanda.org/articles/aa/full_html/2015/09/aa26512-15/aa26512-15.html)
 
 
-### Machine learning
+## Machine learning
 
 - [Segmentation of turbulent computational fluid dynamics simulations with unsupervised ensemble learning](https://arxiv.org/abs/2109.01381)
 - [Exploring helical dynamos with machine learning: Regularized linear regression outperforms ensemble methods](https://www.aanda.org/articles/aa/full_html/2019/09/aa35945-19/aa35945-19.html)
 
 
-### X-ray bursts from neutron stars
+## X-ray bursts from neutron stars
 
 - [Evidence for the Photoionization Absorption Edge in a Photospheric Radius Expansion X-Ray Burst from GRS 1747-312 in Terzan 6](https://iopscience.iop.org/article/10.3847/1538-4357/aade8e)
 - [Basic parameters of the helium-accreting X-ray bursting neutron star in 4U 1820-30](https://academic.oup.com/mnras/article/472/4/3905/4102338)
