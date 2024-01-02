@@ -42,7 +42,7 @@ In addition, my research has been featured in the cover of Physical Review Lette
 
 --------
 
-## Publications
+## Selected Publications
 
 A list of some of the papers of mine that I like the most (in no particular order):
 
@@ -56,7 +56,7 @@ A list of some of the papers of mine that I like the most (in no particular orde
     - By using a detailed Bayesian fitting procedure we show that it is possible to measure the neutron star radius very accurately from existing X-ray data. From this analysis we obtained a neutron star radius of 12.4 +- 0.4 km that is amazingly consistent with other measurements, and is still one of the most accurate measurements of NS radius.
 
 
-# Research topics
+## All Publications Sorted by the Research Topic
 
 In general, you can categorize my past work to (roughly) these topics:
 
