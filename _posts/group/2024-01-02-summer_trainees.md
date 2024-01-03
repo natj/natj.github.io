@@ -7,7 +7,7 @@ share: true
 sidebar:
   nav: "general"
 image:
-  teaser: blank.png
+  teaser: helsinki_logo2.png
 excerpt: "Summer Trainee 2024 positions in our group are available for University of Helsinki students."
 ---
 
