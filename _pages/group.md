@@ -57,16 +57,21 @@ Plasma astrophysics is a new, emerging research field aiming to understand the d
 [accretion flows around black holes](http://www.scholarpedia.org/article/Accretion_discs), and
 enigmatic [fast radio bursts](https://www.scientificamerican.com/article/mysterious-fast-radio-bursts-are-finally-coming-into-focus/).
 
+![University of Helsinki](/images/helsinki_logo.png){: .align-right} ![ERC](/images/erc_logo.png){: .align-right}
+
+{: .text-justify}
 The research is funded by the European Research Council (ERC) Starting Grant project ILLUMINATOR. The project aims to unravel how neutron stars generate their observed electromagnetic radiation.
 
 
-## High-performance Computing Lab
 
+## High-Performance Computing Lab
+
+{: .text-justify}
 High-performance computing solutions and open-source simulation tools are essential to our research. To perform our numerical studies, we maintain our own computational laboratory with a dedicated in-house, >1000-core supercomputer. We use the cluster to develop the open-source plasma simulation framework Runko. 
 
 <figure>
 	<a href="https://github.com/natj/runko"><img src="/images/runko_logo_gol.gif"></a>
-	<figcaption>Runko: Modern C++/Python CPU/GPU Plasma Toolkit.</figcaption>
+	<figcaption>Runko: Modern C++/Python CPU/GPU Plasma Toolkit. The animation shows a Conway's game-of-life cellular automata simulation with the code name as the initial condition evolved forwards and backwards in time.</figcaption>
 </figure>
 
 
