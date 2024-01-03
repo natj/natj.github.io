@@ -23,7 +23,7 @@ general:
     children:
       - title: "Computational Plasma Astrophysics"
         url: /group/
-      - title: "Open-source Runko framework"
+      - title: "Runko"
         url: https://github.com/natj/runko
   - title: Teaching
     children:
