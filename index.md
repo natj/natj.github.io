@@ -1,5 +1,6 @@
 ---
 layout: home
+title: ""
 classes: wide
 author_profile: true
 sidebar:
