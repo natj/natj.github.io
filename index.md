@@ -22,7 +22,7 @@ I am a computational astrophysicist studying high-energy astrophysical phenomena
 I am also the Principal Investigator of the European Research Council (ERC) funded research project ILLUMINATOR. The project aims to unravel how neutron stars generate their observed electromagnetic radiation.
 
 {: .text-justify}
-I am currently an Associate Research Scientist at [Columbia Astrophysics Laboratory](https://thea.astro.columbia.edu/). I will start as an Associate Professor of Astrophysics later this year in the University of Helsinki. Previously, I was a joint Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) and a Postdoctoral Researcher in Columbia University (2020-2023; New York, USA). Before coming to New York, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (2018-2020; Stockholm, Sweden).
+I am an Associate Professor of Astrophysics at [University of Helsinki](https://www.helsinki.fi/en/about-us/people/people-finder/joonas-nattila-9494785) and Associate Research Scientist at [Columbia Astrophysics Laboratory](https://thea.astro.columbia.edu/). Previously, I was a joint Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) and a Postdoctoral Researcher in Columbia University (2020-2023; New York, USA). Before coming to New York, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (2018-2020; Stockholm, Sweden).
 
 You can read more about my research [here](/about) and on [our group page](/group).
 
@@ -30,7 +30,7 @@ You can read more about my research [here](/about) and on [our group page](/grou
 ### In Finnish/Suomeksi:
 
 {: .text-justify}
-Olen suomalainen astrofyysikko joka keskittyy suurenergia-astrofysiikan ääri-ilmiöiden tutkimiseen. Tutkin muun muuassa neutronitähtien purkauksia, pulsarien säteilyä, mustien aukkojen kertymäkiekkoja, sekä kosmisia radiopurskeita.
+Olen suomalainen astrofysiikan apulaisprofessori Helsingin yliopistossa. Tutkin pääasiassa suurenergia-astrofysiikan ääri-ilmiöitä, kuten neutronitähtien purkauksia, pulsarien säteilyä, mustien aukkojen kertymäkiekkoja, sekä kosmisia radiopurskeita.
 
 -----
 
