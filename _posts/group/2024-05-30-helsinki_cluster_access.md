@@ -15,6 +15,8 @@ excerpt: "A short user guide for setting up an account at University of Helsinki
 
 This is a short tutorial to help setup an computing account at the University of Helsinki's computing cluster. The guide is only relevant for UH students and staff.
 
+As a very first step, you need to contact Joonas to add you to the cluster user group. After that is done, you can follow these steps to log in and install runko.
+
 ## Preliminary access
 
 First, test that you can login to `turso` cluster with
@@ -53,7 +55,7 @@ In practice, print out the public key on your own local machine and copy the con
 cat .ssh/id_rsa.pub
 ```
 
-Next, we need to add the public keys to the remote machines so they can identify it is you who is logging in. SSH to turso (command above) and copy the content of the `id_rsa.pub` text and paste it to `~/.ssh/authorize_keys`. Then, repeat the same and ssh to `username@melkinpaasi.cs.helsinki.fi` and copy the same key to the file of the same name there as well.
+Next, we need to add the public keys to the remote machines so they can identify it is you who is logging in. SSH to turso (command above) and copy the content of the `id_rsa.pub` text and paste it to `~/.ssh/authorized_keys`. Then, repeat the same and ssh to `username@melkinpaasi.cs.helsinki.fi` and copy the same key to the file of the same name there as well.
 
 ### SSH shortcut to your .ssh/config
 
@@ -67,7 +69,7 @@ Host turso
     IdentityFile ~/.ssh/id_rsa
     ProxyJump your_username@melkinpaasi.cs.helsinki.fi
 ```
-and replace `your_username` with the university account name.
+and replace `your_username` with the university account name (note that it appears in 2 places here).
 
 After this, you should be able to connect to turso from anywhere with
 
@@ -146,7 +148,7 @@ module load runko
 
 and can compile runko in `/wrk-vakka` (which was the location where we cloned the code in the SSH setup stage) with
 ```bash
-cd $RUNKODIR
+cd /wrk-vakka/users/$USER/runko
 mkdir build
 cd build
 cmake ..
@@ -191,7 +193,7 @@ with the content of `1ds3.turso` being something like
 module use /home/jnattila/modules
 module load runko
 
-# activate threading
+# HPC configurations
 export OMP_NUM_THREADS=1
 export PYTHONDONTWRITEBYTECODE=true
 export HDF5_USE_FILE_LOCKING=FALSE
@@ -202,7 +204,7 @@ cd $RUNKODIR/projects/pic-shocks/
 mpirun -n 16 python pic.py --conf 2dsig3.ini
 ```
 
-This uses ukko (`-M ukko`) to run a job in the short queue (`-p short`) on one node (`--nodes=1`) with 16 cores ('--ntasks-per-node=16`).
+This uses ukko (`-M ukko`) to run a job in the short queue (`-p short`) on one node (`--nodes=1`) with 16 cores (`--ntasks-per-node=16`).
 
 
 ### Basic SLURM commands
