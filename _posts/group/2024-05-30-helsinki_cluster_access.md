@@ -13,9 +13,9 @@ excerpt: "A short user guide for setting up an account at University of Helsinki
 ---
 
 
-This is a short tutorial to help setup an computing account at the University of Helsinki's computing cluster. The guide is only relevant for UH students and staff.
+This is a short tutorial to help setup a computing account at the University of Helsinki's computing cluster. The guide is only relevant for UH students and staff.
 
-As a very first step, you need to contact Joonas to add you to the cluster user group. After that is done, you can follow these steps to log in and install runko.
+As a very first step, you need to ask your group leader to add you to the cluster user group. After that is done, you can follow these steps to log in and install runko.
 
 ## Preliminary access
 
@@ -24,9 +24,9 @@ First, test that you can login to `turso` cluster with
 ```bash
 ssh -YA username@turso.cs.helsinki.fi
 ```
-where you need to replace `username` with your uni account name. The connection only works within the university internet network, i.e., you have to be physically at the campus. If you are greeted with the turso terminal, you can continue to the next step.
+where you need to replace `username` with your uni account name. The connection only works within the university's eduroam internet network, i.e., you have to be physically at the campus. If you are greeted with the turso terminal, you can continue to the next step.
 
-If you want to connect from outside the university you need to first jump through via e.g., `melkinpaasi.cs.helsinki.fi`. Tips for this below.
+If you want to connect from outside the university you need to first jump through via e.g., `melkinpaasi.cs.helsinki.fi`. Tips for how to automate this are given below.
 
 
 ## SSH connection
@@ -41,7 +41,7 @@ First, we need to generate a public SSH key (if you dont already have one). On y
 
 ```bash
 mkdir .ssh 
-ssh-keygen
+ssh-keygen -t rsa
 ```
 and press enter for the default suggested directory and for passphrase (i.e. it leave empty).
 
@@ -49,13 +49,14 @@ The command generates
 - `.ssh/id_rsa` private ssh key
 - `.ssh/id_rsa.pub` public ssh key (for sharing)
 
-In practice, print out the public key on your own local machine and copy the content to clipboard with
+In order to whitelist your computer you need to add the `id_rsa.pub` key to the host machine's SSH config. In practice, print out the public key on your own local machine and copy the content to clipboard with
 
 ```bash
 cat .ssh/id_rsa.pub
 ```
 
-Next, we need to add the public keys to the remote machines so they can identify it is you who is logging in. SSH to turso (command above) and copy the content of the `id_rsa.pub` text and paste it to `~/.ssh/authorized_keys`. Then, repeat the same and ssh to `username@melkinpaasi.cs.helsinki.fi` and copy the same key to the file of the same name there as well.
+Then, connect via ssh to turso (command above) and paste the content of the `id_rsa.pub` (on your own machine) to `~/.ssh/authorized_keys` (on the host machine). Then, repeat the same process on melkinpaasi by issuing a ssh connection to `username@melkinpaasi.cs.helsinki.fi` and paste the same key to to there as well.
+
 
 ### SSH shortcut to your .ssh/config
 
@@ -69,7 +70,7 @@ Host turso
     IdentityFile ~/.ssh/id_rsa
     ProxyJump your_username@melkinpaasi.cs.helsinki.fi
 ```
-and replace `your_username` with the university account name (note that it appears in 2 places here).
+and replace `your_username` with the university account name (note that it appears in 2 places here). Note that the whitespace on the command is made via tabs (not spaces).
 
 After this, you should be able to connect to turso from anywhere with
 
@@ -78,6 +79,7 @@ ssh turso
 ```
 
 ## Runko installation
+
 
 ### Modules
 
