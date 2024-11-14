@@ -190,7 +190,7 @@ Runko installation is now possible. We can compile the code with
 cd runko
 mkdir build
 cd build
-CC=cc CXX=CC cmake -DCMAKE_BUILD_TYPE=Release ..
+CC=cc CXX=CC cmake -DPython_EXECUTABLE=$(which python3) -DCMAKE_BUILD_TYPE=Release ..
 make -j4
 ```
 After which you should see the compilation take place and the tests being run. Note that the CMake will not find the correct Cray compilers if they are not provided via the prefix `CC=c-compiler CXX=c++-compiler` before the `cmake` call.
