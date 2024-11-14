@@ -17,14 +17,14 @@ This is a short tutorial to help setup a computing account at the University of 
 
 As a very first step, you need to ask your group leader to add you to the cluster user group. After that is done, you can follow these steps to log in and install runko.
 
-## Preliminary access
+## Preliminary steps
 
-First, test that you can login to `turso` cluster with
+First, you need to login to `turso` cluster at least once to initialize your home directory structure:
 
 ```bash
 ssh -YA username@turso.cs.helsinki.fi
 ```
-where you need to replace `username` with your uni account name. The connection only works within the university's eduroam internet network, i.e., you have to be physically at the campus. If you are greeted with the turso terminal, you can continue to the next step.
+where `username` needs to be replaced by your uni-account name. The password is your standard university selected one. The connection only works within the university's eduroam internet network, i.e., you have to be physically at the campus. If you are greeted with the turso terminal, you can continue to the next step.
 
 If you want to connect from outside the university you need to first jump through via e.g., `melkinpaasi.cs.helsinki.fi`. Tips for how to automate this are given below.
 
@@ -33,11 +33,10 @@ If you want to connect from outside the university you need to first jump throug
 
 ### SSH keys for easier login
 
-A regular ssh connection requires you to type the (university) password on every login. You can make your life a bit easier by adding your SSH public key to the accepted connections on `turso`. 
+Next, you need to identify your machine and update the SSH public keys on the gateway hosts.
+This step needs to be done only once per machine that you will use to login (or jump to other machines).
 
-The following steps need to be done only once per machine that you will use to login to the terminal.
-
-First, we need to generate a public SSH key (if you dont already have one). On your own machine's home directory (i.e., `~/`) execute
+First, generate a public SSH key (if you dont already have one). On your own machine's home directory (i.e., `~/`) with
 
 ```bash
 mkdir .ssh 
@@ -55,27 +54,32 @@ In order to whitelist your computer you need to add the `id_rsa.pub` key to the 
 cat .ssh/id_rsa.pub
 ```
 
-Then, connect via ssh to turso (command above) and paste the content of the `id_rsa.pub` (on your own machine) to `~/.ssh/authorized_keys` (on the host machine). Then, repeat the same process on melkinpaasi by issuing a ssh connection to `username@melkinpaasi.cs.helsinki.fi` and paste the same key to to there as well.
+Then, connect to one of the gateway machines, such as `melkki` via 
+
+```bash
+ssh -YA username@melkki.cs.helsinki.fi
+```
+and paste the content of the `id_rsa.pub` (from your own machine) to `~/.ssh/authorized_keys` (on the host machine). 
 
 
 ### SSH shortcut to your .ssh/config
 
-One final touch can be done by configuring your own SSH connections to include `turso` as a known host. The following steps need to be done only once per machine that you will use to login to the terminal.
+One final touch is to configure your own SSH connections to include `hile` as a known host. The following step need to be done only once per machine that you will use to login to `hile`.
 
-Add to your own machine's `~/.ssh/config`
+Append to your own machine's `~/.ssh/config` (or create the directory and file if it does not exist)
 ```
-Host turso
-    HostName turso.cs.helsinki.fi
-    User your_username
+Host hile
+    HostName hile01.it.helsinki.fi
+    User username
     IdentityFile ~/.ssh/id_rsa
-    ProxyJump your_username@melkinpaasi.cs.helsinki.fi
+    ProxyJump username@melkki.cs.helsinki.fi
 ```
-and replace `your_username` with the university account name (note that it appears in 2 places here). Note that the whitespace on the command is made via tabs (not spaces).
+and replace `username` with the university account name (note that it appears in 2 places here). Note that the whitespace on the command is made via tabs (not spaces).
 
-After this, you should be able to connect to turso from anywhere with
+After this, you should be able to connect to `hile` from your own machine with
 
 ```bash
-ssh turso
+ssh hile
 ```
 
 ## Runko installation
@@ -83,7 +87,7 @@ ssh turso
 
 ### Modules
 
-Next, we will automate the loading of the necessary HPC modules on turso. SSH to `turso` and move to the `vakka` work disk space, and clone `runko` there for later access:
+Next, we will automate the loading of the necessary HPC modules on `hile`. SSH to `hile` and move to the `vakka` work disk space, and clone `runko` there for later access:
 
 ```bash
 ssh turso
