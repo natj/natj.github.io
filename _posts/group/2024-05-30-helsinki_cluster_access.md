@@ -48,33 +48,33 @@ The command generates
 - `.ssh/id_rsa` private ssh key
 - `.ssh/id_rsa.pub` public ssh key (for sharing)
 
-In order to whitelist your computer you need to add the `id_rsa.pub` key to the host machine's SSH config. In practice, print out the public key on your own local machine and copy the content to clipboard with
+In order to whitelist your computer you need to copy the `id_rsa.pub` key to the host machine's SSH config and update the ssh agent. In practice, 
 
 ```bash
-cat .ssh/id_rsa.pub
+ssh-add
+ssh-copy-id USER@melkinpaasi.cs.helsinki.fi
+ssh-copy-id USER@turso.cs.helsinki.fi
 ```
-
-Then, connect to one of the gateway machines, such as `melkki` via 
-
-```bash
-ssh -YA username@melkki.cs.helsinki.fi
-```
-and paste the content of the `id_rsa.pub` (from your own machine) to `~/.ssh/authorized_keys` (on the host machine). 
-
 
 ### SSH shortcut to your .ssh/config
 
 One final touch is to configure your own SSH connections to include `hile` as a known host. The following step need to be done only once per machine that you will use to login to `hile`.
 
 Append to your own machine's `~/.ssh/config` (or create the directory and file if it does not exist)
-```
+
+```bash
+Host turso
+    HostName turso.cs.helsinki.fi
+    User username
+    IdentityFile ~/.ssh/id_ed25519
+    ProxyJump username@melkinpaasi.cs.helsinki.fi
 Host hile
     HostName hile01.it.helsinki.fi
     User username
     IdentityFile ~/.ssh/id_rsa
     ProxyJump username@melkki.cs.helsinki.fi
 ```
-and replace `username` with the university account name (note that it appears in 2 places here). Note that the whitespace on the command is made via tabs (not spaces).
+and replace `username` with the university account name (note that it appears in 4 places here). Note that the whitespace on the command is made via tabs (not spaces).
 
 After this, you should be able to connect to `hile` from your own machine with
 
