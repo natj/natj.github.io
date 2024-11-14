@@ -129,7 +129,7 @@ PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/external/corgi/lib"
 export PYTHONPATH
 ```
 
-This loads to the correct Cray HPC modules when you login to the cluster.
+This loads the correct Cray HPC modules when you login to the cluster.
 
 
 ### Virtual Python environment
@@ -142,16 +142,16 @@ First, we need to create a directory for storing the virtual python packages wit
 cd $RUNKODIR
 mkdir venvs
 cd venvs
-python3 -m venv runko
+python3 -m venv runko-cray
 ```
 
 Then, activate the environment with
 ```bash
-source venvs/runko/bin/activate
+source venvs/runko-cray/bin/activate
 ```
 after which you should see the terminal status bar change to 
 ```bash
-(runko) username@hile:~$ 
+(runko-cray) username@hile:~$ 
 ```
 
 or similar. Note that our `.bashrc` should already have the activation command in it so in the future, when you login back to hile, you should automatically have the correct python environment loaded.
@@ -178,7 +178,13 @@ cd /wrk-kappa/users/$USER
 git clone --recursive https://github.com/natj/runko.git
 ```
 
-Runko installation is now easy. We login to `hile`, have the modules loaded automatically, and compile with
+It is also recommended to modify the `runko/CMakeLists.txt` and activate `hile` specific compiler flags by adding (around line 30):
+
+```bash
+set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -flto -ffp=4 -march=znver3 -mtune=znver3 -fopenmp -fsave-loopmark") // cray compiler flags
+```
+
+Runko installation is now possible. We can compile the code with
 
 ```bash
 cd runko
@@ -187,7 +193,7 @@ cd build
 CC=cc CXX=CC cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j4
 ```
-After which you should see the compilation take place and the tests being run. Note that the CMake is will not find the correct Cray compilers if they are not provided via the prefix `CC=c-compiler CXX=c++-compiler` before the `cmake` call.
+After which you should see the compilation take place and the tests being run. Note that the CMake will not find the correct Cray compilers if they are not provided via the prefix `CC=c-compiler CXX=c++-compiler` before the `cmake` call.
 
 ## Runko and SLURM usage
 
@@ -245,7 +251,7 @@ cd $RUNKODIR/projects/pic-shocks/
 srun --mpi=cray_shasta python3 pic.py --conf 1dsig3.ini   # Cray
 ```
 
-This uses hile to run a job in the cpu queue (`-p cpu`) on one node (`--nodes=1`) with 16 cores (`--ntasks-per-node=32`).
+This uses hile to run a job in the cpu queue (`-p cpu`) on one node (`--nodes=1`) with 32 cores (`--ntasks-per-node=32`).
 
 
 ### Basic SLURM commands
