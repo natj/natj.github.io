@@ -87,81 +87,107 @@ ssh hile
 
 ### Modules
 
-Next, we will automate the loading of the necessary HPC modules on `hile`. SSH to `hile` and move to the `vakka` work disk space, and clone `runko` there for later access:
+Next, we will automate the loading of the necessary HPC modules on `hile`. SSH to `hile` and then add to your `~/.bashrc`:
 
 ```bash
-ssh turso
-cd /wrk-vakka/users/$USER
-git clone --recursive https://github.com/natj/runko.git
+## hile modules
+module purge
+
+# Cray
+module load PrgEnv-cray
+module load craype-x86-milan # or rome
+module load cce
+module load craype
+
+# OFI
+module load cray-mpich
+module load craype-network-ofi
+module load libfabric
+
+# shared memory support
+module load cray-pmi
+module load cray-dsmml
+module load cray-openshmemx
+
+# other tools
+module load cray-hdf5
+module load cray-python
+module load cray-libsci
+module load perftools-base
+
+export CXX=CC
+export CC=cc
+
+source /wrk-kappa/users/$USER/venvs/runko-cray/bin/activate
+
+#--------------------------------------------------
+export RUNKODIR=/wrk-kappa/users/$USER/runko
+
+PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/"
+PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/lib"
+PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/external/corgi/lib"
+export PYTHONPATH
 ```
 
-Then, move back to the turso home directory, create a `modules/runko` folder and copy the module file template there with
-```bash
-cd ~
-mkdir modules
-cd modules
-mkdir runko
-cp /wrk-vakka/users/$USER/runko/archs/modules/5.0.0.lua ~/modules/runko/5.0.0.lua 
-```
-
-Next, we need to introduce our own `module` directory to lmod. Its best to automate this by adding to your `~/.bash_profile` on `turso` a line (and create the file if does not exist)
-```bash
-module use --append /home/your_username/modules
-```
-where `your_username` needs to be replaced with the real one. Now, when you login to turso, the available module list will be automatically updated.
+This loads to the correct Cray HPC modules when you login to the cluster.
 
 
 ### Virtual Python environment
 
-Finally, we need to setup the virtual python environment. To do this, first load the (incomplete) modules we just created with
-```bash
-module use --append /home/$USER/modules
-```
+Next, we need to initialize our own python virtual environment.
+You need to have the correct modules (defined above) loaded so if you have not done so yet, logout and login to load the Cray HPC dev environment.
 
-and create a python virtual environment on `turso` home directory with
+First, we need to create a directory for storing the virtual python packages with
 ```bash
+cd $RUNKODIR
 mkdir venvs
-cd ~/venvs
-virtualenv runko
+cd venvs
+python3 -m venv runko
 ```
 
-Then activate the environment with
+Then, activate the environment with
 ```bash
-source ~/venvs/runko/bin/activate
+source venvs/runko/bin/activate
 ```
 after which you should see the terminal status bar change to 
 ```bash
-(runko) username@turso2:~$ 
+(runko) username@hile:~$ 
 ```
 
-or similar.
+or similar. Note that our `.bashrc` should already have the activation command in it so in the future, when you login back to hile, you should automatically have the correct python environment loaded.
 
-Then, we can install the python requirements (stored and reloaded automatically when we activate the venv) with
+Then, we can install the python requirements (stored and reloaded automatically when we login and activate the venv) with
 
 ```bash
-pip install mpi4py h5py scipy matplotlib numpy
+pip3 install mpi4py --force-reinstall --no-binary mpi4py 
+pip3 install h5py scipy matplotlib numpy
 ```
 
-The computing environment is now ready for compilation.
+The `mpi4py` needs to be installed separately because the mpi from `cray-python` is configured incorrectly (its modules are compiled with GCC, not CC)
 
-### Installation
+The computing environment is now ready for compilation and regular use.
 
-Runko installation is now easy. We login to `turso`, load the `runko` module, 
+
+### Runko installation
+
+All simulation files that need to be accessed by the compute nodes have to reside in the `kappa` disk space. Therefore, we will also install all of your scripts there.
+First, move to the `kappa` work disk space, and clone the `runko` repository:
+
 ```bash
-ssh turso
-module load runko
+cd /wrk-kappa/users/$USER
+git clone --recursive https://github.com/natj/runko.git
 ```
 
-and can compile runko in `/wrk-vakka` (which was the location where we cloned the code in the SSH setup stage) with
+Runko installation is now easy. We login to `hile`, have the modules loaded automatically, and compile with
+
 ```bash
-cd /wrk-vakka/users/$USER/runko
+cd runko
 mkdir build
 cd build
-cmake ..
-make -j8
+CC=cc CXX=CC cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j4
 ```
-After which you should see the compilation take place and the tests being run.
-
+After which you should see the compilation take place and the tests being run. Note that the CMake is will not find the correct Cray compilers if they are not provided via the prefix `CC=c-compiler CXX=c++-compiler` before the `cmake` call.
 
 ## Runko and SLURM usage
 
@@ -176,41 +202,50 @@ cd jobs
 ```
 and submitting the example job
 ```bash
-sbatch 1ds3.turso
+sbatch 1dsig3.hile
 ```
 
-with the content of `1ds3.turso` being something like
+with the content of `1dsig3.hile` being something like
 ```bash
 #!/bin/bash
-#SBATCH -J 1ds3              # user-given SLURM job name
-#SBATCH -M ukko              # machine name [ukko, kale, carrington, hile]
-#SBATCH -p short             # partition; use "sinfo -M all" for options
-#SBATCH --output=%J.out      # output file name
-#SBATCH --error=%J.err       # output error file name
-#SBATCH -t 0-05:00:00        # maximum job duration
-#SBATCH --nodes=1            # number of computing nodes
-#SBATCH --ntasks-per-node=16 # MPI tasks launched per node
-#SBATCH --constraint=amd     # target specific nodes; [amd, intel]
-#SBATCH --exclusive          # reserve the full node for the job
+#SBATCH -J 1ds3
+#SBATCH -p cpu
+#SBATCH --output=%J.out
+#SBATCH --error=%J.err
+#SBATCH -c 1                   # cores per task
+#SBATCH --ntasks-per-node=32  # 128 for amd epyc romes
+#SBATCH -t 00-03:00:00         # max run time
+#SBATCH --nodes=1              # nodes reserved
+#SBATCH --mem-per-cpu=7G       # max 7G/128 cores
+#SBATCH --distribution=block:block
 
-# INFO: ukko AMD nodes have 128 EPYC Rome cores
+# SBATCH --exclude=  # exclude some nodes
+# SBATCH --nodelist= # white list some nodes
 
-# modules
-module use /home/jnattila/modules
-module load runko
+# HILE-C node list
+# x3000c0s14b1n0,x3000c0s14b2n0,x3000c0s14b3n0,x3000c0s14b4n0,x3000c0s16b1n0,x3000c0s16b2n0,x3000c0s16b3n0,x3000c0s16b4n0,x3000c0s18b1n0,x3000c0s18b2n0,x3000c0s18b3n0,x3000c0s18b4n0
 
-# HPC configurations
+# specific environment variable settings
 export OMP_NUM_THREADS=1
 export PYTHONDONTWRITEBYTECODE=true
 export HDF5_USE_FILE_LOCKING=FALSE
 
+# Cray optimizations
+export MPICH_OFI_STARTUP_CONNECT=1  # create mpi rank connections in the beginning, not on the fly
+export FI_CXI_DEFAULT_TX_SIZE=16384 # 4096 # increase max MPI msgs per rank
+# export FI_CXI_RDZV_THRESHOLD=16384 # same but for slingshot <2.1
+export FI_CXI_RX_MATCH_MODE=hybrid # in case hardware storate overflows, we use software mem
+
+# export FI_OFI_RXM_SAR_LIMIT=524288 # mpi small/eager msg limit in bytes
+# export FI_OFI_RXM_BUFFER_SIZE=131072 # mpi msg buffer of 128KiB
+
 # go to working directory
 cd $RUNKODIR/projects/pic-shocks/
 
-mpirun -n 16 python pic.py --conf 2dsig3.ini
+srun --mpi=cray_shasta python3 pic.py --conf 1dsig3.ini   # Cray
 ```
 
-This uses ukko (`-M ukko`) to run a job in the short queue (`-p short`) on one node (`--nodes=1`) with 16 cores (`--ntasks-per-node=16`).
+This uses hile to run a job in the cpu queue (`-p cpu`) on one node (`--nodes=1`) with 16 cores (`--ntasks-per-node=32`).
 
 
 ### Basic SLURM commands
