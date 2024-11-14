@@ -20,8 +20,8 @@ title                    : "Computational Plasma Astrophysics"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Joonas Nättilä"
-description              : "Associate Research Scientist (Columbia University) & Professor of Astrophysics at Helsinki University (May 2024)"
-  #url                      : https://localhost:4000
+description              : "Associate Professor of Astrophysics, University of Helsinki"
+# url                      : https://localhost:4000
 url                      : https://natj.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "Joonas Nättilä"
   avatar           : # "/images/jnattila2_small.jpg"
-  bio              : "Associate Research Scientist (Columbia University); Associate Professor of Astrophysics at Helsinki University (May 2024)"
+  bio              : "Associate Professor of Astrophysics, University of Helsinki"
   location         : "University of Helsinki, Finland"
   email            : "nattila.joonas@gmail.com"
   links:
