@@ -139,7 +139,7 @@ You need to have the correct modules (defined above) loaded so if you have not d
 
 First, we need to create a directory for storing the virtual python packages with
 ```bash
-cd $RUNKODIR
+cd /wrk-kappa/users/$USER
 mkdir venvs
 cd venvs
 python3 -m venv runko-cray
@@ -181,7 +181,7 @@ git clone --recursive https://github.com/natj/runko.git
 It is also recommended to modify the `runko/CMakeLists.txt` and activate `hile` specific compiler flags by adding (around line 30):
 
 ```bash
-set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -flto -ffp=4 -march=znver3 -mtune=znver3 -fopenmp -fsave-loopmark") // cray compiler flags
+set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -flto -ffp=4 -march=znver3 -mtune=znver3 -fopenmp -fsave-loopmark") # cray compiler flags
 ```
 
 Runko installation is now possible. We can compile the code with
