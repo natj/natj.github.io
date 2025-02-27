@@ -84,62 +84,42 @@ ssh hile
 
 ## Runko installation
 
+First we need to clone the `runko` repository to your local `hile` storage space. All simulation files that need to be accessed by the compute nodes have to reside in the `vakka` disk space. Therefore, we will also install all of your scripts there.
+
+First, move to the `vakka` work disk space, and clone the `runko` repository:
+
+```bash
+cd /wrk-vakka/users/$USER
+git clone --recursive git@github.com:hel-astro-lab/runko.git
+```
+
 
 ### Modules
 
-Next, we will automate the loading of the necessary HPC modules on `hile`. SSH to `hile` and then add to your `~/.bashrc`:
+Next, we will automate the loading of the necessary HPC modules on `hile`. `runko` repository provides a ready-made module setup file that we can link to the home directory.
 
 ```bash
-## hile modules
-module purge
-
-# Cray
-module load PrgEnv-cray
-module load craype-x86-milan # or rome
-module load cce
-module load craype
-
-# OFI
-module load cray-mpich
-module load craype-network-ofi
-module load libfabric
-
-# shared memory support
-module load cray-pmi
-module load cray-dsmml
-module load cray-openshmemx
-
-# other tools
-module load cray-hdf5
-module load cray-python
-module load cray-libsci
-module load perftools-base
-
-export CXX=CC
-export CC=cc
-
-source /wrk-kappa/users/$USER/venvs/runko-cray/bin/activate
-
-#--------------------------------------------------
-export RUNKODIR=/wrk-kappa/users/$USER/runko
-
-PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/"
-PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/lib"
-PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$RUNKODIR/external/corgi/lib"
-export PYTHONPATH
+ln -s /wrk-vakka/users/$USER/runko/archs/modules ~/modules
 ```
 
-This loads the correct Cray HPC modules when you login to the cluster.
+After this, we can load the required modules with
+
+```bash
+module use ~/modules
+module --ignore_cache avail
+module load runko
+```
+
+The module also sets all the necessary compiler and python directories needed by the code.
 
 
 ### Virtual Python environment
 
-Next, we need to initialize our own python virtual environment.
-You need to have the correct modules (defined above) loaded so if you have not done so yet, logout and login to load the Cray HPC dev environment.
+Next, we need to initialize our own python virtual environment. You need to have the correct modules (defined above) loaded.
 
 First, we need to create a directory for storing the virtual python packages with
 ```bash
-cd /wrk-kappa/users/$USER
+cd /wrk-vakka/users/$USER
 mkdir venvs
 cd venvs
 python3 -m venv runko-cray
@@ -147,47 +127,45 @@ python3 -m venv runko-cray
 
 Then, activate the environment with
 ```bash
-source venvs/runko-cray/bin/activate
+source runko-cray/bin/activate
 ```
 after which you should see the terminal status bar change to 
 ```bash
 (runko-cray) username@hile:~$ 
 ```
 
-or similar. Note that our `.bashrc` should already have the activation command in it so in the future, when you login back to hile, you should automatically have the correct python environment loaded.
+Note that the runko module file activates the python environments automatically the next time you load it. 
+
 
 Then, we can install the python requirements (stored and reloaded automatically when we login and activate the venv) with
 
 ```bash
-pip3 install mpi4py --force-reinstall --no-binary mpi4py 
+MPICC="cc -shared" pip3 install --no-cache-dir --no-binary=mpi4py mpi4py
 pip3 install h5py scipy matplotlib numpy
 ```
 
-The `mpi4py` needs to be installed separately because the mpi from `cray-python` is configured incorrectly (its modules are compiled with GCC, not CC)
+The `mpi4py` needs to be installed separately because the mpi from `cray-python` is configured incorrectly (its modules are compiled with GCC, not CC). 
 
-The computing environment is now ready for compilation and regular use.
+The computing environment is now ready for compilation and regular use. It can be loaded at every login by issuing `module load runko`.
 
 
 ### Runko installation
 
-All simulation files that need to be accessed by the compute nodes have to reside in the `kappa` disk space. Therefore, we will also install all of your scripts there.
-First, move to the `kappa` work disk space, and clone the `runko` repository:
+Next we can compile `runko` using our new modules. First, move to the `vakka` work disk space
 
 ```bash
-cd /wrk-kappa/users/$USER
-git clone --recursive https://github.com/natj/runko.git
+cd $RUNKODIR
 ```
 
 It is also recommended to modify the `runko/CMakeLists.txt` and activate `hile` specific compiler flags by adding (around line 30):
 
 ```bash
-set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -flto -ffp=4 -march=znver3 -mtune=znver3 -fopenmp -fsave-loopmark") # cray compiler flags
+set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -flto -ffp=4 -march=znver3 -mtune=znver3 -fopenmp -fsave-loopmark") 
 ```
 
-Runko installation is now possible. We can compile the code with
+`Runko` installation is now possible. We can compile the code with
 
 ```bash
-cd runko
 mkdir build
 cd build
 CC=cc CXX=CC cmake -DPython_EXECUTABLE=$(which python3) -DCMAKE_BUILD_TYPE=Release ..
@@ -212,10 +190,11 @@ sbatch 1dsig3.hile
 ```
 
 with the content of `1dsig3.hile` being something like
+
 ```bash
 #!/bin/bash
 #SBATCH -J 1ds3
-#SBATCH -p cpu
+#SBATCH -C c
 #SBATCH --output=%J.out
 #SBATCH --error=%J.err
 #SBATCH -c 1                   # cores per task
@@ -227,6 +206,8 @@ with the content of `1dsig3.hile` being something like
 
 # SBATCH --exclude=  # exclude some nodes
 # SBATCH --nodelist= # white list some nodes
+
+module load libfabric
 
 # HILE-C node list
 # x3000c0s14b1n0,x3000c0s14b2n0,x3000c0s14b3n0,x3000c0s14b4n0,x3000c0s16b1n0,x3000c0s16b2n0,x3000c0s16b3n0,x3000c0s16b4n0,x3000c0s18b1n0,x3000c0s18b2n0,x3000c0s18b3n0,x3000c0s18b4n0
@@ -251,7 +232,9 @@ cd $RUNKODIR/projects/pic-shocks/
 srun --mpi=cray_shasta python3 pic.py --conf 1dsig3.ini   # Cray
 ```
 
-This uses hile to run a job in the cpu queue (`-p cpu`) on one node (`--nodes=1`) with 32 cores (`--ntasks-per-node=32`).
+This uses `hile` to run a job in the cpu queue (`-C c`) on one node (`--nodes=1`) with 32 cores (`--ntasks-per-node=32`). 
+
+Note that the job script needs to include the `module load libfabric` which replaces the `libfabric` module with the newer version located at the compute node.
 
 
 ### Basic SLURM commands
