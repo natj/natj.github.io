@@ -19,7 +19,7 @@ entries_layout: grid
 I am a computational astrophysicist studying high-energy astrophysical phenomena around neutron stars and black holes. For my research, I use both theoretical "pen-and-paper work" and large-scale supercomputer simulations.
 
 {: .text-justify}
-I am also the Principal Investigator of the European Research Council (ERC) funded research project ILLUMINATOR. The project aims to unravel how neutron stars generate their observed electromagnetic radiation.
+I am also the Principal Investigator of the European Research Council (ERC) funded research project ILLUMINATOR and on the Research Council of Finland funded [Centre of Excellence on Neutron-Star Physics](https://www.neutronstars.fi). These projects aims to unravel how neutron stars generate their observed electromagnetic radiation.
 
 {: .text-justify}
 I am an Associate Professor of Astrophysics at [University of Helsinki](https://www.helsinki.fi/en/about-us/people/people-finder/joonas-nattila-9494785) and Associate Research Scientist at [Columbia Astrophysics Laboratory](https://thea.astro.columbia.edu/). Previously, I was a joint Flatiron Research Fellow in [Center for Computational Astrophysics, Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) and a Postdoctoral Researcher in Columbia University (2020-2023; New York, USA). Before coming to New York, I was a Nordita Fellow in [Nordic Institute for Theoretical Physics](http://www.nordita.org) (2018-2020; Stockholm, Sweden).
