@@ -13,7 +13,7 @@ entries_layout: grid
 
 # [About me](/about)
 
-![portrait](/images/jnattila2.jpg){: .align-right}
+![portrait](/images/jnattila4_small.png){: .align-right}
 
 {: .text-justify}
 I am a computational astrophysicist studying high-energy astrophysical phenomena around neutron stars and black holes. For my research, I use both theoretical "pen-and-paper work" and large-scale supercomputer simulations.
